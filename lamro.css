@@ -1,0 +1,201 @@
+/*
+
+Lamro Engraving css
+
+Author: Trent Lamoreaux
+
+Date: 4/18/17
+
+*/
+* {box-sizing: border-box;}
+	/**/
+	
+header, nav, main, footer {display: block;}
+	/*to be compatible with old browsers*/
+	
+body {background-image: url(brick.jpg);
+	 background-repeat: repeat;
+	 background-size: 400px 400px;
+	 font-family: Arial, Verdana, san-serif;}
+	/*background fade color with san-serif lettering*/
+	
+header {background-color: #200272; color: #ffffff;
+	   font-family: Georgia, serif;}
+	/*dark blue background with white lettering*/
+	
+h1 {background-image: url(lamro4.jpg);
+	background-position: right;
+	background-size: 125px 100%;
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	line-height: 72px;
+	margin-bottom: 0;}
+	/*place image in right upper corner of header*/
+	
+nav {float: left;
+	width: 160px;
+	padding: 20px 5px 1px 20px;
+	font-weight: bold;}
+	/*nav on left hand side*/
+	
+nav a{text-decoration: none;}
+	/*no underline under nav*/
+	
+nav ul {list-style-type: none; margin: 0; padding: 0;}
+	/*no bullets and with a padding around the words*/
+	
+nav a:link {color: #000033;}
+nav a:visited {color: #344873;}
+nav a:hover {color: #ffffff;}
+	/*changes nav color when hovered over or clicked*/
+	
+h2 {color: #5b0104;
+	font-family: Georgia, serif;}
+	/*light blue lettering in serif*/
+	
+h3 {color: #000033;}
+	/*dark blue lettering*/
+	
+main {background: #ffffff;
+	margin-left: 170px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 1px; padding-bottom: 1px;
+	display: block;}
+	/*white background with padding around*/
+	
+dt {color: #000033;
+	font-weight: bold;
+	margin-left: 20px;}
+	/*bold dark blue lettering for specific wording*/
+	
+.lamro {color: #000033;
+		font-size: 1.2em;}
+		/*increase letter size for class specific*/
+		
+.float {float: left;
+		margin-right: 10px;
+		border: 3px ridge #000000;
+		clear: left;
+		width: 170px;
+		height: 170px;}
+		/*border around image with float and size*/
+.clearleft {clear: left;}
+		/*images float left gallery page*/
+		
+.gall {width: 200px;
+	   height: 150px;}
+		/*ajdust image size to fit in box-shadow*/
+		
+.image {background: none;}
+		/*no background image for image page*/
+		
+footer {	padding: 10px;
+		color: #333333;
+		font-size: .75em;
+		font-style: italic;
+		text-align: center;
+		background: #ffffff;
+		margin-left: 170px;}
+		/*centered with italic letting at bottom of screen*/
+		
+video {float: right;
+	  margin: 5px;}
+		/**/
+		
+ol {list-style-type: none;}
+		/**/
+		
+table {margin: auto;
+		border: 1px solid #3399cc;
+		width: 90%;
+		border-collapse: collapse;}
+td, th {padding: 5px;
+		border: 1px solid #3399cc;}
+td {text-align: center;}
+.text {text-align: left;}
+tr:nth-of-type(even) {background-color: #eaeaea;}
+		/*center table with centered wording. The description wording will be on
+		left side of 2nd column and even rows will be colored*/
+		
+label {float: left;
+	 display: block;
+	 width: 8em; 
+     clear: left; 
+	 padding-right: 1em;}
+input, textarea {margin-bottom: 1em;
+             display: block;} 
+#mySubmit {margin-left: 10em;}
+		/* adjusts top wording to be bolder. Shink down text area size for a better look
+		and move the submit button to line up with left side text boxes.*/
+		
+#wrapper {margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+		background-color: #00708c;
+		min-width: 700px;
+		max-width: 1024px;
+		box-shadow: 10px 10px 10px #1e1e1e;}
+		/*wraps the page in a border with shadowing on bottom and right side*/
+		
+#home {background-image: url(desert.jpg);
+	  background-size: 100% 100%;
+	  background-repeat: no-repeat;
+	  height: 300px;
+	  margin-left: 170px;}
+		/*image specific for home page*/
+		
+#team {background-image: url(desert.jpg);
+	  background-size: 100% 100%;
+	  background-repeat: no-repeat;
+	  height: 300px;
+      margin-left: 170px;}
+		/*image specific for team page*/
+		
+#gallery li {display: inline-block;
+		  width: 220px;
+		  padding: 10px;
+		  margin: 10px;
+		  background-color: #000033;
+		  color: #ffffff;
+		  text-align: center;
+		  font-style: italic;
+		  font-family: Georgia, serif;}
+			/*image specific for gallery page*/
+		
+#mobile {display: none;}
+		/*places a hyperlink for phone when using mobile*/
+		
+#desktop {display: inline;}
+		/*removes hyperlink for phone when viewed on desktop*/
+		
+@media only screen and (max-width: 1024px){
+  body {margin: 0; padding: 0; background-image: none;}
+  h1 {margin: 0;}
+  nav {float: none; width: auto; padding: 0.5em;}
+  nav li {display: inline-block;}
+  nav a {padding: 1em;}
+  main {padding: 1em; margin-left: 0; font-size: 90%}
+  footer {margin: 0;}
+  #wrapper {width: auto; min-width: 0; margin: 0; box-shadow: none;}
+  #home {margin-left: 0;}
+  #team {margin-left: 0;}
+  #gallery {margin-left: 0;}}
+	/*adjust layout for tablet use, nav on top*/
+	
+@media only screen and (max-width: 768px){
+  h1 {height: 100%; font-size: 1.5em; padding-left: 0.3em;
+	  background-image: none;}
+  nav {padding: 0;}
+  nav a {display: block; padding: 0.2em 0; font-size: 1.3em; border-bottom: 1px ridge #330000;}
+  nav ul {margin: 0; padding: 0;}
+  nav li {display: block; margin: 0; padding: 0;}
+  main {padding: 0.1em 0.6em 0.1em 0.4em;}
+  footer {padding: 0;}
+  #home {display: none;}
+  #team {display: none;}
+  #mobile {display: inline;}
+  #desktop {display: none;}}
+		/*removes hyperlink for phone when viewed on desktop*/
+	/*adjust layout for mobile use. Nav at top and remove background-image
+	  and wrapper*/
